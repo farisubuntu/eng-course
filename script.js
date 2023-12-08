@@ -8,9 +8,9 @@ var vocabularies; //such as ...../vocabularies/201.json,....
 var lesson; // such as ...../id/203.json,...
 var quizzes; // later uses
 var lesson_urls;
-// sample full url for an audio file=> https://d13tz37rv54ob.cloudfront.net/ur/TnBUFMy7uqu_Rwilf-UzaSzeyNFwNZFm?t=1688826351
+// sample full url for an audio file=> https://d13tz37rv54ob.cloudfront.net/en/TnBUFMy7uqu_Rwilf-UzaSzeyNFwNZFm?t=1688826351
 var url_all =
-    "https://raw.githubusercontent.com/farisubuntu/urdu-course/gh-pages/data/all.json";
+    "https://raw.githubusercontent.com/farisubuntu/eng-course/gh-pages/data/all.json";
 
 // data_obj;
 // category; // 1,2,...,88,.....
@@ -82,13 +82,13 @@ function showLessonContent(target) {
 }
 
 // vocabularies fiels:
-// https://raw.githubusercontent.com/farisubuntu/urdu-course/gh-pages/data/....
+// https://raw.githubusercontent.com/farisubuntu/eng-course/gh-pages/data/....
 
 function makeUrls(id) {
     let urls = [];
     // add 'id'
     let const_portion =
-        "https://raw.githubusercontent.com/farisubuntu/urdu-course/gh-pages/data/";
+        "https://raw.githubusercontent.com/farisubuntu/eng-course/gh-pages/data/";
     console.log(const_portion);
     // append 'id'+'.json' (lesson file) as the zero index item
     var category_file = const_portion + id + "/" + id + ".json";
@@ -104,8 +104,8 @@ function makeUrls(id) {
 }
 
 // sample audio link:
-//+ https://d13tz37rv54ob.cloudfront.net/ur/5yJIklmE-tT6L44G-d2no9epgjQXY1kV?t=1580691716
-//+ 'https://d13tz37rv54ob.cloudfront.net/ur/' +
+//+ https://d13tz37rv54ob.cloudfront.net/en/5yJIklmE-tT6L44G-d2no9epgjQXY1kV?t=1580691716
+//+ 'https://d13tz37rv54ob.cloudfront.net/en/' +
 // sample image link (phrase-image): 'https://d37sy4vufic209.cloudfront.net/phrase-images/4LxKr9YvDJgNMNCsfBNDDmpo1QDNYJsM'
 function openLesson(e, id) {
     console.log('openLesson(e,id).....');
@@ -135,7 +135,7 @@ function openLesson(e, id) {
         console.log('cat_no = ', cat_no, ' and lesson_no= ', lesson_no);
     }
 
-    url = `https://raw.githubusercontent.com/farisubuntu/urdu-course/gh-pages/data/${cat_no}/${lesson_no}.json`;
+    url = `https://raw.githubusercontent.com/farisubuntu/eng-course/gh-pages/data/${cat_no}/${lesson_no}.json`;
     console.log(`openLesson(): now call caller(${url},'l')`);
     caller(url, "l");
 }

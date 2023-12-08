@@ -41,7 +41,7 @@ function get_top_bar() {
     document.querySelector(".nav-header").innerHTML = html;
 }
 //  Global Constant:
-var const_audio_portion = "https://d13tz37rv54ob.cloudfront.net/ur/";
+var const_audio_portion = "https://d13tz37rv54ob.cloudfront.net/en/";
 var const_image_portion = "https://d37sy4vufic209.cloudfront.net/phrase-images/";
 // appendPhrasesData()
 function appendPhrasesData() {
