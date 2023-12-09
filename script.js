@@ -8,7 +8,7 @@ var vocabularies; //such as ...../vocabularies/201.json,....
 var lesson; // such as ...../id/203.json,...
 var quizzes; // later uses
 var lesson_urls;
-// sample full url for an audio file=> https://d13tz37rv54ob.cloudfront.net/en/TnBUFMy7uqu_Rwilf-UzaSzeyNFwNZFm?t=1688826351
+// sample full url for an audio file=> https://d13tz37rv54ob.cloudfront.net/en_gb/TnBUFMy7uqu_Rwilf-UzaSzeyNFwNZFm?t=1688826351
 var url_all =
     "https://raw.githubusercontent.com/farisubuntu/eng-course/gh-pages/data/all.json";
 
@@ -104,8 +104,8 @@ function makeUrls(id) {
 }
 
 // sample audio link:
-//+ https://d13tz37rv54ob.cloudfront.net/en/5yJIklmE-tT6L44G-d2no9epgjQXY1kV?t=1580691716
-//+ 'https://d13tz37rv54ob.cloudfront.net/en/' +
+//+ https://d13tz37rv54ob.cloudfront.net/en_gb/5yJIklmE-tT6L44G-d2no9epgjQXY1kV?t=1580691716
+//+ 'https://d13tz37rv54ob.cloudfront.net/en_gb/' +
 // sample image link (phrase-image): 'https://d37sy4vufic209.cloudfront.net/phrase-images/4LxKr9YvDJgNMNCsfBNDDmpo1QDNYJsM'
 function openLesson(e, id) {
     console.log('openLesson(e,id).....');
